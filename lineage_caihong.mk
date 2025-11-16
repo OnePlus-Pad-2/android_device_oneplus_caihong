@@ -11,9 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/oneplus/caihong/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/infinity/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
-PRODUCT_NAME := infinity_caihong
+PRODUCT_NAME := lineage_caihong
 PRODUCT_DEVICE := caihong
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -30,11 +30,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemDevice=OP5DAAL1 \
     SystemName=OPD2403
 
-# Maintainer Name
-INFINITY_MAINTAINER := "Jezzay97"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 8 Gen 3" \
+    RisingMaintainer="Jezzay97"
 
-# Whether the package includes System BLURS
-TARGET_SUPPORTS_BLUR := true
+# Disable/enable blur support, false by default
+TARGET_ENABLE_BLUR := true
 
-# Whether the compiled package ships Google Apps:
-WITH_GAPPS := true
+WITH_GMS := true

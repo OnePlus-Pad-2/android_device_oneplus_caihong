@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_caihong.mk
+    $(LOCAL_DIR)/lineage_caihong.mk
