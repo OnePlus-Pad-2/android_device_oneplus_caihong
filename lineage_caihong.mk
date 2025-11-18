@@ -30,11 +30,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemDevice=OP5DAAL1 \
     SystemName=OPD2403
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="Snapdragon 8 Gen 3" \
-    RisingMaintainer="Jezzay97"
-
-# Disable/enable blur support, false by default
-TARGET_ENABLE_BLUR := true
-
+# Evox stuff
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BUILD_APERTURE_CAMERA := false
 WITH_GMS := true
+TARGET_USES_MINI_GAPPS := true
+EVO_BUILD_TYPE := Unofficial
