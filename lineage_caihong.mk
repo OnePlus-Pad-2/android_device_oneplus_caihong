@@ -30,9 +30,31 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemDevice=OP5DAAL1 \
     SystemName=OPD2403
 
-# Evox stuff
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_BUILD_APERTURE_CAMERA := false
+# UDFPS support
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
+
+# Blur
+TARGET_ENABLE_BLUR := true
+
+# Live wallpapers
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+
+# Quick tap
+TARGET_SUPPORTS_QUICK_TAP  := true
+
+# Now Playing
+TARGET_SUPPORTS_NOW_PLAYING := true
+
+# Clear Calling
+TARGET_SUPPORTS_CLEAR_CALLING := true
+
+# Call Recording Support
+TARGET_SUPPORTS_CALL_RECORDING := true
+
+# GMS
 WITH_GMS := true
-TARGET_USES_MINI_GAPPS := true
-EVO_BUILD_TYPE := Unofficial
+
+# Mist OS Flags
+MIST_BUILD_TYPE := UNOFFICIAL
+MISTOS_MAINTAINER := "Jezzay97"

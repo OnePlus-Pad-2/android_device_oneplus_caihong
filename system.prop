@@ -1,1 +1,8 @@
-
+ro.mist.display=3000 x 2120, 144 Hz
+ro.mist.battery=9510 mAh
+ro.mist.soc=Snapdragon® 8 Gen 3
+ro.mist.camera=13MP
+ro.mist.front=8MP
+ro.mist.platform=SM8650
+ro.mist.screen=12.1' IPS LCD
+ro.mist.device.name=OnePlus Pad 2
